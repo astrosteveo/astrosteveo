@@ -4,68 +4,124 @@
 
 <h1 align="center">AstroSteveo</h1>
 <p align="center">
-  <strong>Software Engineer</strong> • AI Agent Tinkerer • Amateur Astrophysicist<br/>
-  <em>"The best tools disappear into the workflow."</em>
+  <strong>Software Engineer</strong> • AI Workflow Architect • Amateur Astrophysicist<br/>
+  <em>"Research first. Test first. Evidence before claims."</em>
 </p>
 
 <p align="center">
-  <img alt="Languages" src="https://img.shields.io/badge/Languages-Rust | TypeScript | Shell-6f42c1?style=for-the-badge"/>
-  <img alt="Focus" src="https://img.shields.io/badge/Focus-AI%20Agents%20%2F%20Game%20Dev-8A2BE2?style=for-the-badge"/>
-  <img alt="Vibe" src="https://img.shields.io/badge/Vibe-Workflows%20>%20Willpower-ff6f3c?style=for-the-badge"/>
+  <img alt="Languages" src="https://img.shields.io/badge/Languages-Rust | TypeScript | Python-6f42c1?style=for-the-badge"/>
+  <img alt="Focus" src="https://img.shields.io/badge/Focus-AI%20Workflows%20%2F%20Space%20Sims%20%2F%20Astronomy-8A2BE2?style=for-the-badge"/>
+  <img alt="Vibe" src="https://img.shields.io/badge/Vibe-Discipline%20>%20Demos-ff6f3c?style=for-the-badge"/>
 </p>
 
 ---
 
 ### What I'm Building
 
-**AI that actually works in production codebases.** Most AI coding tools choke on real projects—context exhaustion, slop accumulation, mental misalignment. I'm not interested in demos that work on todo apps. I'm building workflows that survive contact with legacy code.
+**Disciplined AI-assisted development.** Most AI coding tools ship slop — context exhaustion, stale knowledge, no verification. I build workflows that force research before design, tests before code, and evidence before claims. No shortcuts.
 
-**Games with physics that feel right.** Space sims where ships move like ships, not sprites. Real orbital mechanics, real inertia, real satisfaction. The kind of game where you can feel the mass of your vessel when you try to stop.
+**Space games with physics that feel right.** Eve Online's flight model, WoW's structured content, but PvE-first. Ships that have mass. A universe where the galaxy is the antagonist, not other players.
 
-**Scripts that answer questions.** How many light-seconds from Earth to Mars right now? What's the delta-v budget to get there? Sometimes you just need to do the math at 2am because the universe won't stop being interesting.
+**Astronomy tools for stargazers.** Real-time sky data, observation logging, meteor showers, ISS passes. From CLI to progressive web app. Because sometimes you need to know what's visible at 2am from your backyard.
 
-> "If you're not occasionally computing orbital mechanics for fun, are you even relaxing?"
+> "If you're not occasionally computing twilight times for fun, are you even relaxing?"
 
 ---
 
-### Flagship: `claude-code-plugins`
+### Flagship: `void-sector`
 
-A collection of Claude Code plugins, headlined by **epic** — a structured workflow for AI-assisted development that I built because I got tired of babysitting context windows.
+A space sandbox MMO built with Bevy 0.17 (Rust). Eve Online's depth meets WoW's accessibility — but PvE-first.
+
+**The vision:** A living galaxy where every item is crafted, not spawned. NPC factions with territorial ambitions. Environmental hazards. Hostile space fauna. Bio-ships grown from harvested creatures. The void is alive and hungry.
+
+**The implementation:**
+- Eve Online-style flight physics (exponential acceleration curves, verified by tests)
+- Navigation commands: Approach, Orbit, Keep at Range, Align, Warp
+- Click-to-target with lock timers and QWEASD hotkey system
+- 64-bit coordinates via `big_space` for massive universe support
+- 36+ passing tests verifying physics formulas
+
+**Current status:** Pre-production. Flight prototype complete. Click-to-target system in progress. The ships fly exactly like Eve ships should.
 
 ```
-/epic:explore → /epic:plan → /epic:implement → /epic:validate → /epic:commit
+void-sector/
+├── crates/void_core/    # Shared physics & commands
+├── crates/void_client/  # Bevy client application
+├── GDD.md               # 1,661-line game design document
+└── .harness/            # Structured development workflow
 ```
 
-**The problem:** AI fills its context window with grep calls before writing any code, then ships slop that needs rework. You spend more time fixing AI output than you saved by using AI.
+---
 
-**The solution:** Deliberate phases with artifact documentation. Research agents run in the background. Plans get reviewed before code gets written. Context stays at 40-60% utilization. The AI earns trust incrementally.
+### Flagship: `astrosky`
 
-**The result:** AI that handles brownfield codebases, complex multi-file problems, and passes expert review. Code that doesn't make you wince.
+A full-stack astronomy application — CLI, API, and progressive web app. Your window to the cosmos.
+
+**What it does:**
+- Real-time visibility: planets, moon phase, ISS passes, meteor showers, deep sky objects
+- Observing conditions scoring based on weather, cloud cover, moon brightness
+- Observation logging with equipment tracking and Messier Marathon progress
+- Achievements, weekly challenges, and a gamified progression system
+- Smart "What should I observe tonight?" recommendations (Premium)
+
+**The stack:**
+- **CLI:** Python + Skyfield + Click (`pip install astrosky`)
+- **API:** FastAPI, deployed on Railway
+- **Web:** React 19 + Vite + Tailwind, deployed on Vercel (PWA with offline support)
+
+**Current status:** Production. Live at [astrosky-beryl.vercel.app](https://astrosky-beryl.vercel.app). 95+ tests. 59 React components. Premium tier with subscription infrastructure.
+
+```bash
+# CLI
+pip install astrosky
+astrosky tonight --location "Austin, TX"
+
+# Or without installing
+uvx astrosky tonight
+```
+
+---
+
+### Flagship: `superharness`
+
+A Claude Code plugin that enforces disciplined AI-assisted development. Merges the best of ace-workflows and harness into one command-driven system.
+
+**Five iron rules:**
+1. Research first — never design without verifying current APIs
+2. TDD mandatory — failing tests before production code
+3. Evidence before claims — run verification commands fresh
+4. Systematic debugging — root cause analysis before fixes
+5. Context compaction — handoff documents preserve knowledge across sessions
+
+**12 commands, 5 skills, 6 specialized agents:**
+
+```
+/superharness:research      → Explore codebase + verify external APIs
+/superharness:create-plan   → Design with 3 architecture options
+/superharness:implement     → Execute with TDD and human gates
+/superharness:validate      → Evidence-based verification
+/superharness:debug         → 4-phase systematic debugging
+/superharness:gamedev       → Playtesting gates for game development
+/superharness:handoff       → Create context checkpoint
+/superharness:resume        → Resume from handoff with state verification
+```
+
+**The result:** AI that researches before it designs, tests before it codes, and proves before it claims. No slop. No shortcuts.
 
 ```bash
 claude plugin marketplace add astrosteveo/claude-code-plugins
-claude plugin install epic@astrosteveo-plugins
+claude plugin install superharness@astrosteveo-plugins
 ```
-
----
-
-### Also in Orbit: `void-sector`
-
-A space game built with Bevy (Rust). Click-to-move flight, approach commands, orbital mechanics. Client/server architecture with replicon networking. Combat, economy, and progression systems in various stages of completion.
-
-**The goal:** "Physics poetry" — ships that float like they have mass in a universe that has rules. No arcade nonsense. No "space is just water with stars." Actual Newtonian vibes.
-
-**Current status:** The ships fly. The ships shoot. The economy... exists. It's getting there.
 
 ---
 
 ### Operating Principles
 
-- Tools should amplify, not interrupt.
-- Workflows beat willpower. Systems beat motivation.
-- If the AI keeps making the same mistake, the process is wrong — not the AI.
-- Document the why; the what is in the code.
-- The best abstraction is the one you delete later.
+- Research first. Training data is stale. Verify everything.
+- Tests before code. No exceptions unless explicitly requested.
+- Evidence before claims. "Should work" is not acceptable.
+- The AI keeps making the same mistake? The process is wrong.
+- Tools should amplify, not interrupt. Workflows beat willpower.
 - Astrophysics is relaxing. Fight me.
 
 ---
@@ -73,10 +129,10 @@ A space game built with Bevy (Rust). Click-to-move flight, approach commands, or
 ### The Stack
 
 ```
-AI Tooling:       Claude Code plugins, agent workflows, context management
-Game Dev:         Rust, Bevy, ECS patterns, networked multiplayer
-Scripts:          Whatever gets the answer fastest (usually Python, sometimes regret)
-Infrastructure:   Arch Linux, Nix when it makes sense, tmux always
+AI Tooling:       Claude Code plugins, SUPERHARNESS workflow, context management
+Game Dev:         Rust, Bevy 0.17, ECS patterns, big_space coordinates
+Astronomy:        Python, Skyfield, FastAPI, React, Tailwind, Vercel/Railway
+Infrastructure:   Arch Linux, tmux always, Nix when it makes sense
 ```
 
 ---
@@ -86,20 +142,20 @@ Infrastructure:   Arch Linux, Nix when it makes sense, tmux always
 | | |
 |---|---|
 | **Motto** | "Worlds aren't hosted. They're cultivated." |
-| **Superpower** | Turning fuzzy intent into running systems before the coffee gets cold. |
-| **Current Rabbit Hole** | Making AI assistants useful beyond the demo. |
-| **Late Night Hobby** | Calculating how long it takes light to reach places. |
-| **Hot Take** | Most "AI coding tools" are just autocomplete with better marketing. |
+| **Superpower** | Turning fuzzy intent into verified, tested systems. |
+| **Current Rabbit Hole** | Bio-horror space ships grown from alien creatures. |
+| **Late Night Hobby** | Checking what's visible in tonight's sky. |
+| **Hot Take** | Most "AI coding tools" skip research, skip tests, and call it productivity. |
 
 ---
 
 ### Collaboration
 
 Interested in:
-- AI agent patterns that actually scale beyond toy examples
-- Context management strategies for LLM-assisted development
-- Space sims, orbital mechanics, and n-body problems
-- Anything where the math is satisfying and the abstractions are honest
+- AI workflows that enforce discipline, not just suggest it
+- Space sims, orbital mechanics, and Eve Online flight physics
+- Astronomy tools and real-time celestial calculations
+- Anything where the math is satisfying and the tests prove it works
 
 Open an issue or start a discussion. I don't bite. The code might.
 
