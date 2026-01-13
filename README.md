@@ -18,11 +18,11 @@
 
 ### What I'm Building
 
-**Disciplined AI-assisted development.** Most AI coding tools ship slop — context exhaustion, stale knowledge, no verification. I build workflows that force research before design, tests before code, and evidence before claims. No shortcuts.
+**Disciplined AI-assisted development.** Most AI coding agents (Claude Code, Codex, are designed to be unopinionated  — context exhaustion, stale knowledge, no verification. I build workflows that force research before design, tests before code, and evidence before claims. No shortcuts. All powered by a [Engram](https://github.com/astrosteveo/engram).
 
-**Space games with physics that feel right.** Eve Online's flight model, WoW's structured content, but PvE-first. Ships that have mass. A universe where the galaxy is the antagonist, not other players.
+**Space games with physics that feel right.** Thrust-based physics, hybrid sandpark gameplay loop, focused around a PvE experience--it's the worlds best pilots in the Universe against the worlds most dangerous threat ever identified in the far reaches of Deep Space. Do you take the next contract, or do you pass it to focus on other things higher up your proiority tree? Your actions carry weight -- that contract you ignored could result in death, espionage, or you just might save your own life by turning a blind eye. Which will you choose?
 
-**Astronomy tools for stargazers.** Real-time sky data, observation logging, meteor showers, ISS passes. From CLI to progressive web app. Because sometimes you need to know what's visible at 2am from your backyard.
+**Astronomy tools for stargazers.** Real-time sky data, observation logging, meteor showers, ISS passes. From CLI to progressive web app. Are you curious of the skies tonight will be clear enough to spot celestial objects, and speceifically, which of these will be the easiest to spot. Happily hosted on [Vercel](https://vercel.app) and [Railway](https://railway.com).
 
 > "If you're not occasionally computing twilight times for fun, are you even relaxing?"
 
@@ -78,39 +78,6 @@ astrosky tonight --location "Austin, TX"
 
 # Or without installing
 uvx astrosky tonight
-```
-
----
-
-### Flagship: `superharness`
-
-A Claude Code plugin that enforces disciplined AI-assisted development. Merges the best of ace-workflows and harness into one command-driven system.
-
-**Five iron rules:**
-1. Research first — never design without verifying current APIs
-2. TDD mandatory — failing tests before production code
-3. Evidence before claims — run verification commands fresh
-4. Systematic debugging — root cause analysis before fixes
-5. Context compaction — handoff documents preserve knowledge across sessions
-
-**12 commands, 5 skills, 6 specialized agents:**
-
-```
-/superharness:research      → Explore codebase + verify external APIs
-/superharness:create-plan   → Design with 3 architecture options
-/superharness:implement     → Execute with TDD and human gates
-/superharness:validate      → Evidence-based verification
-/superharness:debug         → 4-phase systematic debugging
-/superharness:gamedev       → Playtesting gates for game development
-/superharness:handoff       → Create context checkpoint
-/superharness:resume        → Resume from handoff with state verification
-```
-
-**The result:** AI that researches before it designs, tests before it codes, and proves before it claims. No slop. No shortcuts.
-
-```bash
-claude plugin marketplace add astrosteveo/claude-code-plugins
-claude plugin install superharness@astrosteveo-plugins
 ```
 
 ---
