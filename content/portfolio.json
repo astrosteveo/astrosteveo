@@ -1,0 +1,48 @@
+{
+  "name": "Steven Mosley",
+  "handle": "astrosteveo",
+  "email": "smosleyjr@proton.me",
+  "role": "Software builder · Developer tools · Interactive experiences",
+  "intro": "I build software that makes complex work feel more approachable: tools for developers, interfaces with purpose, and interactive experiences worth exploring.",
+  "approach": "I work from the problem to the finished experience: shaping behavior, reviewing implementation, testing the details, and refining what people actually use. AI is part of my development workflow; design judgment, verification, and ownership stay with me.",
+  "website": "https://steven-mosley.vercel.app/",
+  "portfolio_url": "https://astrosteveo.github.io/astrosteveo/",
+  "projects": [
+    {
+      "id": "void-sector",
+      "name": "Void Sector",
+      "category": "Interactive experiences",
+      "description": "An upcoming, independently developed space MMO built in Godot and C#. Further details will be shared as the project develops.",
+      "tags": ["Godot", "C#", "Space MMO"],
+      "public_repo": null,
+      "status": "Private project"
+    },
+    {
+      "id": "gdh",
+      "name": "gdh",
+      "category": "Developer tools",
+      "description": "Godot development tooling for Linux. Capture real GPU-rendered scenes, inspect visual output and engine errors, and support agent-driven development with editor integration, tests, and build exports.",
+      "tags": ["Python", "Godot", "GPU tooling"],
+      "public_repo": "https://github.com/astrosteveo/gdh",
+      "status": "Public source"
+    },
+    {
+      "id": "mdview",
+      "name": "mdview",
+      "category": "Developer tools",
+      "description": "A terminal Markdown viewer built in Go. Read, search, and follow documents in an interactive pager, or send styled output through a pipeline. Optional Mermaid rendering brings diagrams into Kitty.",
+      "tags": ["Go", "Terminal UI", "Markdown"],
+      "public_repo": "https://github.com/astrosteveo/mdview",
+      "status": "Public source"
+    },
+    {
+      "id": "claude-plugins",
+      "name": "Claude Plugins",
+      "category": "Developer workflows",
+      "description": "My Claude Code plugin marketplace. The issue-board plugin brings GitHub issues, pull requests, acceptance progress, and CI into the working interface. The ask plugin supports side questions and a decision log.",
+      "tags": ["TypeScript", "Claude Code", "Plugins"],
+      "public_repo": "https://github.com/astrosteveo/claude-plugins",
+      "status": "Public source"
+    }
+  ]
+}
