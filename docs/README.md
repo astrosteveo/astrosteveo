@@ -31,7 +31,7 @@ Public sources for the project copy:
 
 - [mdview README](https://github.com/astrosteveo/mdview#readme)
 - [Claude Plugins README](https://github.com/astrosteveo/claude-plugins#readme)
-- [gdh README](https://github.com/astrosteveo/gdh#readme), once public
+- [gdh README](https://github.com/astrosteveo/gdh#readme)
 
 GitHub setup references:
 
